@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "variables/**/*";
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/base/_all";
+@import "../node_modules/bulma/sass/elements/_all";
+@import "../node_modules/bulma/sass/components/_all";
+@import "../node_modules/bulma/sass/grid/_all";
+@import "../node_modules/bulma/sass/layout/_all";
+@import "../node_modules/bulma/sass/form/_all";
+@import "utils/**/*";
+@import "base/**/*";
+@import "components/**/*";
+@import "elements/**/*";
+@import "layout/**/*";
+@import "pages/**/*";
+
+html {
+  scroll-behavior: smooth;
+}
+.content{
+  hyphens: auto;
+}
+
+.content a:not(.button) {
+  text-decoration: underline;
+}
+
+
+.whatsapp-beacon{
+  position:fixed;
+  bottom:3rem;
+  right:3rem;
+  width: 60px;
+  height: 60px;
+  img{
+    width: 100%;
+    height: auto;
+    z-index: 9;
+    filter: drop-shadow(0 0 10px rgba(black, .6));
+    &:hover{
+      filter: drop-shadow(0 0 10px rgba(black, .8));
+    }
+    position: relative;
+
+  }
+  &:after{
+    content:"";
+    display:block;
+    width: calc(100%);
+    height: calc(100%);
+    z-index: 0;
+    border-radius: 50%;
+    background:green;
+    position:absolute;
+    left:0;
+    top:0;
+    animation: pulse 2s ease 0s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+body{
+  padding:0 !important;
+  max-width:none !important;
+}
