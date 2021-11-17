@@ -1,6 +1,6 @@
 <?php
 
-$content = file_get_contents('https://docs.google.com/document/d/e/2PACX-1vRM-XKGcMlS_ucnOPwm_ysEQ8WNx4G6P4WH17VO5v3OI1Dyoek-1LIkFyJIQpyGaCUaZOdggyVF8lQ-/pub?embedded=true');
+$content = file_get_contents('contract.html');
 ?>
 
 <html lang="es-ES">
