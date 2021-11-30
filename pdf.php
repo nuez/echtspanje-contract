@@ -1,6 +1,8 @@
 <?php
 
 $content = file_get_contents('https://docs.google.com/document/d/e/2PACX-1vRM-XKGcMlS_ucnOPwm_ysEQ8WNx4G6P4WH17VO5v3OI1Dyoek-1LIkFyJIQpyGaCUaZOdggyVF8lQ-/pub?embedded=true');
+$content = file_get_contents('contract.html');
+
 ?>
 
 <html lang="es-ES">
@@ -30,7 +32,7 @@ $content = file_get_contents('https://docs.google.com/document/d/e/2PACX-1vRM-XK
 
 <body>
 
-<section class="section hero is-medium is-size-7">
+<section class="section hero is-size-7">
     <div class="container">
         <div class="field ">
             <div class="field-label is-normal">
@@ -40,7 +42,7 @@ $content = file_get_contents('https://docs.google.com/document/d/e/2PACX-1vRM-XK
                 <div class="field">
 
                     <div class="logo">
-                        <img src="logo.svg" style="max-width: 200px"
+                        <img src="logo.svg" style="max-width: 90px"
                              alt="AuténticaEspaña.es"/>
                     </div>
                     <h1 class="title">Contratación Auténtica España</h1>
